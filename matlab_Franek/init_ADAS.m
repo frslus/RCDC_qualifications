@@ -16,8 +16,9 @@ fs = 100;               % [Hz] Częstotliwość próbkowania
 tau_radar = 0.02;       % [s] Stała czasowa filtru radaru. 
 
 %% 3. Inne parametry
-ttc_threshold = 1.5;    % [s] Krytyczny czas do kolizji 
-
+ttc_threshold = 1.5;   % [s] Krytyczny czas do kolizji
+a_ego = 0;              % [m/s^2] Przyspieszenie samochodu
+a_max = 10;             % [m/s^2] Maksymalne przyspieszenie samochodu
 
 %% 4. Otwarcie i uruchomienie modelu
 open_system("ADAS_System");
