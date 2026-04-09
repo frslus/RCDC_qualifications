@@ -6,9 +6,9 @@ clear; clc;
 
 
 %% 1. Parametry początkowe symulacji
-v_ego = 40;        % [m/s] Prędkość początkowa naszego pojazdu
+v_ego = 80;        % [m/s] Prędkość początkowa naszego pojazdu
 v_lead = 25;       % [m/s] Prędkość pojazdu poprzedzającego 
-d_init = 160;      % [m] Dystans początkowy.
+d_init = 300;      % [m] Dystans początkowy.
 
 %% 2. Parametry czujników i filtru 
 radar_max_range = 150;  % [m] Zasięg przedniego radaru 
