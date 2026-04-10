@@ -6,9 +6,11 @@ clear; clc;
 
 
 %% 1. Parametry początkowe symulacji
-v_ego = 40;        % [m/s] Prędkość początkowa naszego pojazdu
-v_lead = 25;       % [m/s] Prędkość pojazdu poprzedzającego 
-d_init = 160;      % [m] Dystans początkowy.
+v_ego = 60;        % [m/s] Prędkość początkowa naszego pojazdu
+v_lead = 50;       % [m/s] Prędkość pojazdu poprzedzającego 
+% NAGLE ZACZYNA MALEĆ O 8m/s^2
+% ALE KIEROWCA REAGUJE
+d_init = 200;      % [m] Dystans początkowy.
 
 %% 2. Parametry czujników i filtru 
 radar_max_range = 150;  % [m] Zasięg przedniego radaru 
@@ -16,9 +18,7 @@ fs = 100;               % [Hz] Częstotliwość próbkowania
 tau_radar = 0.02;       % [s] Stała czasowa filtru radaru. 
 
 %% 3. Inne parametry
-ttc_threshold = 1.5;    % [s] Krytyczny czas do kolizji
-a_ego = 2;              % [m/s^2] Przyspieszenie samochodu
-a_max = 10;             % [m/s^2] Max. przyspieszenie samochodu
+ttc_threshold = 1.5;    % [s] Krytyczny czas do kolizji 
 
 
 %% 4. Otwarcie i uruchomienie modelu
