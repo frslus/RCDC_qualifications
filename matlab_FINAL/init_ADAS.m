@@ -6,8 +6,8 @@ clear; clc;
 
 
 %% 1. Parametry początkowe symulacji
-v_ego = 80;        % [m/s] Prędkość początkowa naszego pojazdu
-v_lead = 40;       % [m/s] Prędkość pojazdu poprzedzającego 
+v_ego = 60;        % [m/s] Prędkość początkowa naszego pojazdu
+v_lead = 50;       % [m/s] Prędkość pojazdu poprzedzającego 
 % NAGLE ZACZYNA MALEĆ O 8m/s^2
 % ALE KIEROWCA REAGUJE
 d_init = 200;      % [m] Dystans początkowy.
